@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEBSITE OFFICE 8</title>
+     <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body class="container-fluid">
+    <div class="row">
+        <div class="col-md-3 col-lg-2 d-md-block bg-dark sidebar collapse min-vh-100 p-3">
+            <a href="#" class="d-flex align-item-center mb-3 mb-md-0 me-md-auto text-white text-decoration none">
+            <span class="fs-4">Website Office 8</span>
+            </a>
+            <hr class="text-white">
+            <ul class="nav nav-pills flex-column mb-auto">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link hover active" aria-current="page">Dashboard</a>
+                </li>
+                <li class="nav-item">
+                    <a href="profile.html" class="nav-link hover" aria-current="page">Profile</a>
+                </li>
+                <li class="nav-item">
+                    <a href="tabel karyawan.html" class="nav-link hover" aria-current="page">Data Karyawan</a>
+                </li>
+                <li class="nav-item">
+                    <a href="transaksi.html" class="nav-link hover" aria-current="page">Transaksi</a>
+                </li>
+                 <li class="nav-item">
+                    <a href="product.html" class="nav-link hover" aria-current="page">Produk</a>
+                </li>
+                <li class="nav-item">
+                    <a href="login.html" class="nav-link hover" aria-current="page">Logout</a>
+                </li>
+            </ul>
+        </div>
+        <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light mb-4 shadow-sm">
+                <div class="container-fluid">
+                    <span class="navbar-brand">Dashboard Utama</span>
+                        <div class="d-flex">
+                            <span class="navbar-text">Halo, Admin</span>
+                        </div>
+                </div>
+            </nav>
+             <div class="p-4 bg-light rounded-3">
+                <h1><center>Website Office 8</center></h1>
+            </div>
+            <style>
+                h1,h2,p,a{
+                    font-family:Arial, Helvetica, sans-serif;
+                    font-weight:normal;
+                }
+                .jam-digital-deva{
+                    overflow:hidden;
+                    width: 333px;
+                    margin: 50px auto;
+                    border: 5px solid rgb(59, 85, 150);
+                }
+                .kotak{
+                    float: left;
+                    width: 100px;
+                    height: 100px;
+                    background-color: rgb(255, 255, 255);
+                }
+                .jam-digital-deva p{
+                    color: rgb(20, 35, 62);
+                    font-size: 36px;
+                    text-align: center;
+                    margin-top: 30px;
+                }
+            </style>
+            <div class="jam-digital-deva">
+                <div class="kotak">
+                    <p id="jam"></p>
+                </div>
+                <div class="kotak">
+                <p id="menit"></p>
+                </div> 
+                <div class="kotak">
+                <p id="detik"></p>
+                </div>
+            </div>
+            <script>
+        window.setTimeout("waktu()", 1000);
+        function waktu() {
+            var waktu = new Date();
+            setTimeout("waktu()", 1000);
+            document.getElementById("jam").innerHTML = waktu.getHours();
+            document.getElementById("menit").innerHTML = waktu.getMinutes();
+            document.getElementById("detik").innerHTML = waktu.getSeconds();
+             }
+            </script>
+        </main>
+</body>
+</html>
